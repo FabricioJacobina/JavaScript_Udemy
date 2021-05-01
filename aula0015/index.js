@@ -1,0 +1,24 @@
+//let num1 = 9.5487;
+//let num2 = Math.round(num1);
+//console.log();
+//const ale = Math.round(Math.random() * (10 - 1));
+//console.log(ale);
+const numero = Number(prompt('Digite um número:'));
+const numeroTitulo = document.getElementById('numberTitle');
+const numeroRepet = document.getElementById('number_title');
+const raiz = document.getElementById('raiz');
+const texto = document.getElementById('texto');
+const inteiro = document.getElementById('integer');
+const nan = document.getElementById('nan');
+const baixo = document.getElementById('floor');
+const cima = document.getElementById('ceil');
+const decimal = document.getElementById('decimal');
+
+numeroTitulo.innerHTML = numero;
+numeroRepet.innerHTML = numero;
+inteiro.innerHTML = Number.isInteger(numero);
+raiz.innerHTML = numero ** 0.5;
+nan.innerHTML = Number.isNaN(numero);
+baixo.innerHTML = Math.floor(numero);
+cima.innerHTML = Math.ceil(numero);
+decimal.innerHTML = numero.toFixed(2);
